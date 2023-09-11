@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN WALLET - Dashboard</title>
+    <style>
+        body {
+            background-color: #2ecc71; 
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ffffff; /* White header text color */
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #ffffff; /* White text color */
+        }
+
+        p1 {
+            font-size: 16px;
+            color: #ffffff; /* White text color */
+        }
+
+        button {
+            background-color: #27ae60; /* Green button color */
+            color: #ffffff; /* White text color */
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #219151; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>DASHBOARD</h1> 
+    <h2>AVAILABLE BALANCE: <%= bal %> 3RC</h2>
+    <p1><strong>Your Wallet Address:</strong><i><%= add %></i> </p1>
+    <br>
+    <button onclick="redirectToPage2()">Send 3RC</button>
+
+    <script>
+        // JavaScript function to redirect to "/txn"
+        function redirectToPage2() {
+            // Redirect to the "/txn" route
+            window.location.href = "/txn";
+        }
+    </script>
+</body>
+</html>

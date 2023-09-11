@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Details</title>
+</head>
+<body>
+    <h1>Submitted Details</h1>
+    <p id="firstNameLabel">First Name: </p>
+    <p id="lastNameLabel">Last Name: </p>
+    <p id="emailLabel">Email: </p>
+
+    <script>
+        // JavaScript to populate the labels with the submitted data
+        const firstNameLabel = document.getElementById('firstNameLabel');
+        const lastNameLabel = document.getElementById('lastNameLabel');
+        const emailLabel = document.getElementById('emailLabel');
+
+        // Replace the text content of the labels with the submitted data
+        firstNameLabel.textContent += '<%= firstName %>';
+        lastNameLabel.textContent += '<%= lastName %>';
+        emailLabel.textContent += '<%= email %>';
+    </script>
+</body>
+</html>

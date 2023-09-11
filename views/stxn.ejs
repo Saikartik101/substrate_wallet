@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN WALLET - Transaction Details</title>
+    <style>
+        body {
+            background-color: #2ecc71; /* Green background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ffffff; /* White header text color */
+            margin-top: 50px;
+        }
+
+        p1, p2, p3 {
+            font-size: 18px;
+            color: #ffffff; /* White text color */
+        }
+
+        button {
+            background-color: #27ae60; /* Green button color */
+            color: #ffffff; /* White text color */
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #219151; /* Darker green on hover */
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #ffffff; /* White text color */
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transaction Details</h1>
+    <p1><%= txn1 %></p1>
+    <br>
+    <br>
+    <p2>Total Network Fee: <%= txn2 %></p2>
+    <br>
+    <br>
+    <p3><%= txn3 %></p3>
+    <br>
+    <br>
+
+    <button onclick="redirectToPage2()">Go To Dashboard</button>
+
+    <h2>GREEN NETWORK</h2>
+
+    <script>
+        // JavaScript function to redirect to "/dash"
+        function redirectToPage2() {
+            // Redirect to the "/dash" route
+            window.location.href = "/dash";
+        }
+    </script>
+</body>
+</html>

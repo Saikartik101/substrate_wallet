@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN WALLET - Create Account</title>
+    <style>
+        body {
+            background-color: #2ecc71; /* Green background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ffffff; /* White text color */
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #ffffff; /* White text color */
+        }
+
+        button {
+            background-color: #27ae60; /* Green button color */
+            color: #ffffff; /* White text color */
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #219151; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Your Account In Green Wallet</h1>
+    <p>Creating an account enables you to securely send, receive, and store your funds.</p>
+    
+    <button onclick="redirectToPage()">Enter Mnemonic Phrase Manually</button>
+    <button onclick="redirectToPage2()">Auto Generate Mnemonic Phrase</button>
+
+    <script>
+        // JavaScript function to redirect to "/manual"
+        function redirectToPage() {
+            // Redirect to the "/manual" route (change the URL to your actual page)
+            window.location.href = "/manual"; // Replace with the correct URL
+        }
+
+        // JavaScript function to redirect to "/auto"
+        function redirectToPage2() {
+            // Redirect to the "/auto" route (change the URL to your actual page)
+            window.location.href = "/auto"; // Replace with the correct URL
+        }
+    </script>
+</body>
+</html>

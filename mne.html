@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GREEN WALLET - Enter Mnemonic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #2ecc71; /* Green background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #ffffff; /* White container background color */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #2ecc71; /* Green header text color */
+        }
+
+        p1 {
+            font-size: 18px;
+            color: #2ecc71; /* Green text color */
+        }
+
+        p2 {
+            font-size: 16px;
+            color: #2ecc71; /* Green text color */
+        }
+
+        label {
+            color: #2ecc71; /* Green label text color */
+        }
+
+        .form-control {
+            border: 2px solid #2ecc71; /* Green border for input fields */
+        }
+
+        .btn-primary {
+            background-color: #27ae60; /* Green button color */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #219151; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Mnemonic</h1>
+        <p1>Mnemonic Must Contain At Least 12 Words</p1>
+        <p2>PLEASE NOTE DOWN YOUR PHRASE AND STORE IT SAFELY</p2>
+        <form action="/manual" method="POST">
+            <div class="form-group">
+                <label for="firstName">Enter:</label>
+                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter your mnemonic phrase" name="firstName">
+            </div>
+       
+            <button type="submit" class="btn btn-primary">Create account</button>
+        </form>
+    </div>
+</body>
+</html>

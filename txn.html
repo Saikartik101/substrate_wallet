@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GREEN WALLET - Send 3RC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #2ecc71; /* Green background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #ffffff; /* White container background color */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #2ecc71; /* Green header text color */
+        }
+
+        p1, p2 {
+            font-size: 18px;
+            color: #2ecc71; /* Green text color */
+        }
+
+        label {
+            color: #2ecc71; /* Green label text color */
+        }
+
+        .form-control {
+            border: 2px solid #2ecc71; /* Green border for input fields */
+        }
+
+        .btn-primary {
+            background-color: #27ae60; /* Green button color */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #219151; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Send 3RC</h1>
+        <p1>You Can Send Your 3RC To Any Green Wallet Address</p1>
+        <p2>Paste Recipient's Address</p2>
+        <form action="/txn" method="POST">
+            <div class="form-group">
+                <label for="recipientAddress">Paste here:</label>
+                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Paste Recipient's Address Here" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="amount">Enter Amount here:</label>
+                <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Enter How Much Amount Of 3RC You Want To Send" name="lastName">
+            </div>
+
+            <button type="submit" class="btn btn-primary">SEND</button>
+        </form>
+    </div>
+</body>
+</html>
